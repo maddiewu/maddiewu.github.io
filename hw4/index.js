@@ -8,11 +8,13 @@ const HOSTED_URLS = {
 
 const examples = {
   'example1':
-      'Alice was beginning to get very tired of sitting by her sister on the bank.',
+      'She began now to comprehend that he was exactly the man who, in disposition and talents, would most suit her.',
   'example2':
-      'Buda-Pesth seems a wonderful place.',
+      'Threescore and ten I can remember well Within the volume of which time I have seen Hours dreadful and things strange, but this sore night Hath trifled former knowings..',
   'example3':
-      'Scepticism was as much the result of knowledge, as knowledge is of scepticism.'      
+      'You are very rude. It’s the stupidest tea party I ever was at in all my life—',
+  'example4':
+      'That mortal man should feed upon the creature that feeds his lamp, and, like Stubb, eat him by his own light, as you may say; this seems so outlandish a thing that one must needs go a little into the history and philosophy of it.'
 };
 
 function status(statusText) {
