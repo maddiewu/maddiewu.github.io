@@ -10,11 +10,11 @@ const examples = {
   'example1':
       'She began now to comprehend that he was exactly the man who, in disposition and talents, would most suit her.',
   'example2':
-      'Threescore and ten I can remember well Within the volume of which time I have seen Hours dreadful and things strange, but this sore night Hath trifled former knowings..',
+      'Thou play'dst most foully for't; yet it was said It should not stand in thy posterity,But that myself should be the root and father Of many kings. ',
   'example3':
       'You are very rude. It’s the stupidest tea party I ever was at in all my life—',
   'example4':
-      'That mortal man should feed upon the creature that feeds his lamp, and, like Stubb, eat him by his own light, as you may say; this seems so outlandish a thing that one must needs go a little into the history and philosophy of it.'
+      'About midnight that steak was cut and cooked; and lighted by two lanterns of sperm oil, Stubb stoutly stood up to his spermaceti supper at the capstan-head, as if that capstan were a sideboard.'
 };
 
 function status(statusText) {
