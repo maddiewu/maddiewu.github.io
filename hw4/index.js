@@ -12,9 +12,7 @@ const examples = {
   'example2':
       'Stay you imperfect Speakers, tell me more: By Sinells death, I know I am Thane of Glamis, But how, of Cawdor?,
   'example3':
-      'You are very rude. It’s the stupidest tea party I ever was at in all my life—',
-  'example4':
-      'If they but knew it, almost all men in their degree, some time or other, cherish very nearly the same feelings towards the ocean with me.' 
+      'You are very rude. It’s the stupidest tea party I ever was at in all my life—' 
 };
 
 function status(statusText) {
