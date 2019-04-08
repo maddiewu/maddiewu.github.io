@@ -8,13 +8,11 @@ const HOSTED_URLS = {
 
 const examples = {
   'example1':
-      'She began now to comprehend that he was exactly the man who, in disposition and talents, would most suit her.',
+      'Alice was beginning to get very tired of sitting by her sister on the bank.',
   'example2':
-      'Thou play'dst most foully for't; yet it was said It should not stand in thy posterity,But that myself should be the root and father Of many kings. ',
+      'Buda-Pesth seems a wonderful place.',
   'example3':
-      'You are very rude. It’s the stupidest tea party I ever was at in all my life—',
-  'example4':
-      'About midnight that steak was cut and cooked; and lighted by two lanterns of sperm oil, Stubb stoutly stood up to his spermaceti supper at the capstan-head, as if that capstan were a sideboard.'
+      'Scepticism was as much the result of knowledge, as knowledge is of scepticism.'      
 };
 
 function status(statusText) {
@@ -49,11 +47,11 @@ function doPredict(predict) {
   const result = predict(textField.value);
   score_string = "Class scores: ";
   for (var x in result.score) {
-    score_string += x + " ->  " + result.score[x].toFixed(4) + ", "
+    score_string += x + " ->  " + result.score[x].toFixed(3) + ", "
   }
   //console.log(score_string);
   status(
-      score_string + ' elapsed: ' + result.elapsed.toFixed(4) + ' ms)');
+      score_string + ' elapsed: ' + result.elapsed.toFixed(3) + ' ms)');
 }
 
 function prepUI(predict) {
@@ -110,7 +108,7 @@ class Classifier {
     return this;
   }
 
-async loadMetadata() {
+  async loadMetadata() {
     const metadata =
         await loadHostedMetadata(this.urls.metadata);
     showMetadata(metadata);
@@ -132,7 +130,7 @@ async loadMetadata() {
     }
     const input = inputBuffer.toTensor();
     //console.log(input);
-
+    
     status('Running inference');
     const beginMs = performance.now();
     const predictOut = this.model.predict(input);
@@ -141,7 +139,7 @@ async loadMetadata() {
     predictOut.dispose();
     const endMs = performance.now();
 
-return {score: score, elapsed: (endMs - beginMs)};
+    return {score: score, elapsed: (endMs - beginMs)};
   }
 };
 
