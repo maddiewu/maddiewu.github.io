@@ -7,12 +7,12 @@ const HOSTED_URLS = {
 };
 
 const examples = {
-    'example1':
+  'example1':
       'She began now to comprehend that he was exactly the man who, in disposition and talents, would most suit her.',
   'example2':
-      'Stay you imperfect Speakers, tell me more: By Sinells death, I know I am Thane of Glamis, But how, of Cawdor?,
+      'Stay you imperfect Speakers, tell me more: By Sinells death, I know I am Thane of Glamis, But how, of Cawdor?',
   'example3':
-      'You are very rude. It’s the stupidest tea party I ever was at in all my life—' 
+      'You are very rude. It’s the stupidest tea party I ever was at in all my life—'      
 };
 
 function status(statusText) {
