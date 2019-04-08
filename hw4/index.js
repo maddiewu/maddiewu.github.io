@@ -14,7 +14,9 @@ const examples = {
   'example3':
       'You are very rude. It’s the stupidest tea party I ever was at in all my life—',
   'example4':
-      'About midnight that steak was cut and cooked; and lighted by two lanterns of sperm oil, Stubb stoutly stood up to his spermaceti supper at the capstan-head, as if that capstan were a sideboard.' 
+      'If they but knew it, almost all men in their degree, some time or other, cherish very nearly the same feelings towards the ocean with me.'
+
+' 
 };
 
 function status(statusText) {
@@ -49,11 +51,11 @@ function doPredict(predict) {
   const result = predict(textField.value);
   score_string = "Class scores: ";
   for (var x in result.score) {
-    score_string += x + " ->  " + result.score[x].toFixed(3) + ", "
+    score_string += x + " ->  " + result.score[x].toFixed(4) + ", "
   }
   //console.log(score_string);
   status(
-      score_string + ' elapsed: ' + result.elapsed.toFixed(3) + ' ms)');
+      score_string + ' elapsed: ' + result.elapsed.toFixed(4) + ' ms)');
 }
 
 function prepUI(predict) {
