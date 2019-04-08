@@ -8,13 +8,11 @@ const HOSTED_URLS = {
 
 const examples = {
    'example1':
-      'She began now to comprehend that he was exactly the man who, in disposition and talents, would most suit her.',
+      'Alice was beginning to get very tired of sitting by her sister on the bank.',
   'example2':
-      'Thou play'dst most foully for't; yet it was said It should not stand in thy posterity,But that myself should be the root and father Of many kings. ',
+      'Buda-Pesth seems a wonderful place.',
   'example3':
-      'You are very rude. It’s the stupidest tea party I ever was at in all my life—',
-  'example4':
-      'About midnight that steak was cut and cooked; and lighted by two lanterns of sperm oil, Stubb stoutly stood up to his spermaceti supper at the capstan-head, as if that capstan were a sideboard.'  
+      'Scepticism was as much the result of knowledge, as knowledge is of scepticism.' 
 };
 
 function status(statusText) {
