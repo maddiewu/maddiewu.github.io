@@ -7,12 +7,14 @@ const HOSTED_URLS = {
 };
 
 const examples = {
-  'example1':
-      'Alice was beginning to get very tired of sitting by her sister on the bank.',
+   'example1':
+      'She began now to comprehend that he was exactly the man who, in disposition and talents, would most suit her.',
   'example2':
-      'Buda-Pesth seems a wonderful place.',
+      'Thou play'dst most foully for't; yet it was said It should not stand in thy posterity,But that myself should be the root and father Of many kings. ',
   'example3':
-      'Scepticism was as much the result of knowledge, as knowledge is of scepticism.'      
+      'You are very rude. It’s the stupidest tea party I ever was at in all my life—',
+  'example4':
+      'About midnight that steak was cut and cooked; and lighted by two lanterns of sperm oil, Stubb stoutly stood up to his spermaceti supper at the capstan-head, as if that capstan were a sideboard.'  
 };
 
 function status(statusText) {
@@ -47,11 +49,11 @@ function doPredict(predict) {
   const result = predict(textField.value);
   score_string = "Class scores: ";
   for (var x in result.score) {
-    score_string += x + " ->  " + result.score[x].toFixed(3) + ", "
+    score_string += x + " ->  " + result.score[x].toFixed(4) + ", "
   }
   //console.log(score_string);
   status(
-      score_string + ' elapsed: ' + result.elapsed.toFixed(3) + ' ms)');
+      score_string + ' elapsed: ' + result.elapsed.toFixed(4) + ' ms)');
 }
 
 function prepUI(predict) {
