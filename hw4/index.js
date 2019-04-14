@@ -46,13 +46,13 @@ function disableLoadModelButtons() {
 
 function doPredict(predict) {
   const textField = document.getElementById('text-entry');
-  console.log(textField)
+  console.log(textField);
   const result = predict(textField.value);
   score_string = "Class scores: ";
   for (var x in result.score) {
     score_string += x + " ->  " + result.score[x].toFixed(4) + ", "
   }
-  //console.log(score_string);
+  console.log(score_string);
   status(
       score_string + ' elapsed: ' + result.elapsed.toFixed(4) + ' ms)');
 }
@@ -129,15 +129,15 @@ class Classifier {
     for (let i = 0; i < inputText.length; ++i) {
       const word = inputText[i];
       inputBuffer.set(this.wordIndex[word], 0, i);
-      //console.log(word, this.wordIndex[word], inputBuffer);
+      console.log(word, this.wordIndex[word], inputBuffer);
     }
     const input = inputBuffer.toTensor();
-    //console.log(input);
+    console.log(input);
     
     status('Running inference');
     const beginMs = performance.now();
     const predictOut = this.model.predict(input);
-    //console.log(predictOut.dataSync());
+    console.log(predictOut.dataSync());
     const score = predictOut.dataSync();//[0];
     predictOut.dispose();
     const endMs = performance.now();
