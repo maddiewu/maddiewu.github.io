@@ -46,6 +46,7 @@ function disableLoadModelButtons() {
 
 function doPredict(predict) {
   const textField = document.getElementById('text-entry');
+  console.log(textField)
   const result = predict(textField.value);
   score_string = "Class scores: ";
   for (var x in result.score) {
