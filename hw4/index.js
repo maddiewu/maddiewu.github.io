@@ -127,8 +127,8 @@ class Classifier {
     // Look up word indices.
     const inputBuffer = tf.buffer([1, this.maxLen], 'float32');
     console.log(inputBuffer);
-    int i = 0;
-    int l = 0;
+    var i = 0;
+    var l = 0;
     while (i < inputText.length && l < this.maxLen) {
       const word = inputText[i];
       if (this.wordIndex[word]){
