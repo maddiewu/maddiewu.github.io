@@ -128,7 +128,9 @@ class Classifier {
     const inputBuffer = tf.buffer([1, this.maxLen], 'float32');
     for (let i = 0; i < inputText.length; ++i) {
       const word = inputText[i];
-      inputBuffer.set(this.wordIndex[word], 0, i);
+      if (!isNan(this.wordIndex[word])){
+        inputBuffer.set(this.wordIndex[word], 0, i);
+      }  
       console.log(word, this.wordIndex[word], inputBuffer);
     }
     const input = inputBuffer.toTensor();
