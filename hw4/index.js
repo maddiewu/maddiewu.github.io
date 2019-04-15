@@ -12,7 +12,7 @@ const examples = {
   'example2':
       'Stay you imperfect Speakers, tell me more: By Sinells death, I know I am Thane of Glamis, But how, of Cawdor?',
   'example3':
-      '‘Idiot!’ said the Queen, tossing her head impatiently; and, turning to Alice, she went on, ‘What’s your name, child?‘',
+      'Luckily for Alice, the little magic bottle had now had its full effect, and she grew no larger: still it was very uncomfortable, and, as there seemed to be no sort of chance of her ever getting out of the room again, no wonder she felt unhappy.',
   'example4':
       'If they but knew it, almost all men in their degree, some time or other, cherish very nearly the same feelings towards the ocean with me.'
 };
