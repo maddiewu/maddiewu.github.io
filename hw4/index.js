@@ -132,7 +132,7 @@ class Classifier {
       console.log(word, this.wordIndex[word], inputBuffer);
     }
     const input = inputBuffer.toTensor();
-    console.log(input);
+    constconstole.log(input);
     
     status('Running inference');
     const beginMs = performance.now();
